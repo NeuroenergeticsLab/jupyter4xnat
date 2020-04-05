@@ -1,2 +1,4 @@
-# Jupyter service for jupyter
-[XNAT](https://www.xnat.org) facilitates common management for imaging and associated data, including its analysis at the single-subject level. However, a service that aggregates all the individual data at the project level is missing. Here, we propose to add the [jupyter notebook](https://jupyter.org/) service as an application to aggregate all the individual data contained in a project by adding it as a container into the [docker-compose XNAT project](https://github.com/NrgXnat/xnat-docker-compose).
+# Jupyter service for XNAT
+[XNAT](https://www.xnat.org) is a reliable data management system for imaging data. [Jupyter notebook](https://jupyter.org/) is a convenient interface to automatize, document and visualize imaging analysis steps. 
+However, a smooth integration of  XNAT content into Jupyter is missing. Currently, you would have to fetch data from XNAT, store it locally, process the data with Jupyter, and transfer the results back to XNAT afterwards. 
+Here, we aim to add Jupyter notebook as an interactive layer to directly manipulate and visualize XNAT data. As one possible solution, we  suggest to add Jupyter as a container into the [docker-compose XNAT project](https://github.com/NrgXnat/xnat-docker-compose).
